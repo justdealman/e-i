@@ -14,7 +14,7 @@
 	<div class="wrapper">
 		<div class="panel">
 			<div>
-				<p class="ask"><a href="#">Задать вопрос</a></p>
+				<p class="ask" data-open="feedback"><a href="#">Задать вопрос</a></p>
 				<p class="basket"><a href="#">Ваш заказ: <span>2 товара на 435 094 Р</span></a></p>
 				<p class="lk"><a href="#">Личный кабинет</a></p>
 			</div>
@@ -145,7 +145,7 @@
 							<li><a href="#"><i class="certificate-icon"></i>Сертификат соответствия</a></li>
 							<li><a href="#"><i class="paper-icon"></i>Скачать опросный лист</a></li>
 						</ul>
-						<button class="standart">Добавить к заказу</button>
+						<button class="standart" data-open="add">Добавить к заказу</button>
 						<ul>
 							<li><a href="#"><i class="gear-icon"></i>Сертификат качества</a></li>
 							<li><a href="#"><i class="label-icon"></i>Связаться с отделом продаж</a></li>
@@ -714,13 +714,37 @@
 	<div class="menu-drop">
 		<ul>
 			<li><a href="#">Электродвигатели</a></li>
-			<li><a href="#">Редукторы</a></li>
+			<li>
+				<a href="#">Редукторы</a>
+				<ul>
+					<li>
+						<a href="#">Взрывозащищенные электродвигатели</a>
+						<ul>
+							<li><a href="#">Серии ВА</a></li>
+							<li><a href="#">Серии ВРА</a></li>
+							<li><a href="#">Серии АИМ</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Высоковольтные электродвигатели</a></li>
+					<li><a href="#">Двигатели трехфазные асинхронные АИС</a></li>
+					<li><a href="#">Крановые электродвигатели</a></li>
+					<li><a href="#">Общепромышленные электродвигатели АИР</a></li>
+					<li><a href="#">Однофазные асинхронные электродвигатели</a></li>
+					<li><a href="#">Электродвигатели для привода моноблочных насосов</a></li>
+					<li><a href="#">Электродвигатели для привода станков-качалок</a></li>
+					<li><a href="#">Электродвигатели пониженной высоты АМН</a></li>
+				</ul>
+			</li>
 			<li><a href="#">Насосы</a></li>
 			<li><a href="#">Вентиляция</a></li>
 			<li><a href="#">Частотные преобразователи</a></li>
 			<li><a href="#">Шкафы управления электропривода</a></li>
 		</ul>
 	</div>
+	<ul class="lk-drop">
+		<li><a href="#">Вход</a></li>
+		<li><a href="#">Регистрация</a></li>
+	</ul>
 	<div class="fade"></div>
 	<div class="modal" data-target="call">
 		<span class="close"></span>
@@ -744,6 +768,45 @@
 			<p class="half"><span>Ваш номер телефона</span><input type="text"></p>
 			<p><span>Сообщение</span><textarea cols="80" rows="3"></textarea></p>
 			<button class="standart">Отправить</button>
+		</div>
+	</div>
+	<div class="modal" data-target="feedback">
+		<span class="close"></span>
+		<h4>Заказ оборудования</h4>
+		<div class="form">
+			<p class="half"><span>Ваше имя</span><input type="text"></p>
+			<p class="half"><span>Наименование организации</span><input type="text"></p>
+			<p class="half"><span>E-mail</span><input type="text"></p>
+			<p class="half"><span>Ваш номер телефона</span><input type="text"></p>
+			<p><span>Виды интересуемого оборудования и количество</span><textarea cols="80" rows="3"></textarea></p>
+			<p><span>Комментарий к заказу</span><textarea cols="80" rows="3"></textarea></p>
+			<button class="standart">Отправить</button>
+		</div>
+	</div>
+	<div class="modal" data-target="add">
+		<span class="close"></span>
+		<h4>Вы добавляете к заказу оборудование:<br>
+		Взрывозащищенные двигатели серии ВА</h4>
+		<div class="form">
+			<p class="half">
+				<span>Выберите тип из списка</span>
+				<select>
+					<option></option>
+					<option>1</option>
+				</select>
+			</p>
+			<p class="half"><span>Укажите необходимое количество</span><input type="text"></p>
+			<div class="file">
+				<span class="upload">Приложить опросный лист</span>
+				<input type="file">
+				<strong class="filename"></strong>
+				<span class="delete">удалить</span>
+			</div>
+			<button class="standart back">Добавить и вернуться в каталог</button>
+			<button class="standart continue">Добавить и перейти к оформлению</button>
+			<div class="tip">
+				<p>Для обработки вашего заказа отделом продаж вам необходимо будет внести контактные данные. После этого вы сможете отслеживать статус заказа в личном кабинете.</p>
+			</div>
 		</div>
 	</div>
 	<script src="./js/jquery.js"></script>

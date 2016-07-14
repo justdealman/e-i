@@ -3422,3 +3422,36 @@ h1 {
 	color:#000000;
 	background:#e7e8e8;
 }
+a.go-filter {
+	min-width:140px;
+	display:inline-block;
+	color:#ffffff;
+	font-size:12px;
+	line-height:16px;
+	vertical-align:top;
+	text-transform:uppercase;
+	white-space:nowrap;
+	vertical-align:top;
+	cursor:pointer;
+	padding:12px 23px 13px;
+	margin:14px 8px 18px 9px;
+	background:#f58220;
+	border:1px solid #f58220;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	box-sizing:border-box;
+	-webkit-box-shadow:border-box;
+}
+a.go-filter:before {
+	content:url('../img/filter-icon.png');
+	display:inline-block;
+	vertical-align:top;
+	margin:1px 13px -2px -7px;
+}
+a.go-filter:hover {
+	background:#6d6e71;
+	border-color:#6d6e71;
+}
+a.go-filter:active {
+	padding:13px 23px 12px;
+}

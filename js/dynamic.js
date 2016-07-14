@@ -171,7 +171,9 @@ $(function() {
 	});
 	$('.card-e .gallery .preview li').on('click', function(e) {
 		e.preventDefault();
-		$(this).parents('.gallery').find('[data-main="'+$(this).attr('data-preview')+'"]').stop().fadeIn(200).siblings('img').fadeOut(200);
+		var t = $(this).parents('.gallery');
+		t.find('[data-main]').stop().fadeOut(200);
+		t.find('[data-main="'+$(this).attr('data-preview')+'"]').stop().fadeIn(200);
 		$(this).addClass('current').siblings().removeClass('current');
 	}).filter(':first').click();
 	$('input[type="checkbox"]').uniform();

@@ -230,8 +230,10 @@ $(function() {
 			$(this).children('li').hide();
 			var d = eval($(this).attr('data-show'))-1;
 			var n = $(this).children();
-			for ( var i=0; i<=d; i++ ) {
-				n[i].style.display = 'inline-block';
+			if ( d+1 < $(this).children('li').size() ) {
+				for ( var i=0; i<=d; i++ ) {
+					n[i].style.display = 'inline-block';
+				}
 			}
 		}
 	});

@@ -811,6 +811,7 @@ button.standart:active {
 }
 .index .rc ul li {
 	display:inline-block;
+	display:none;
 	vertical-align:top;
 	margin:0 27px 10px 0;
 }

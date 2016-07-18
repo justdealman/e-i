@@ -442,7 +442,7 @@ menu > ul > li > a {
 	line-height:18px;
 	text-transform:uppercase;
 	padding:16px 14px;
-}/*
+}
 menu > ul > li > a:hover:before {
 	content:'';
 	position:absolute;
@@ -452,14 +452,14 @@ menu > ul > li > a:hover:before {
 	height:71px;
 	background:url('../img/menu-hover.png') no-repeat center center;
 	background-size:100% 100%;
-}*/
+}
 menu > ul > li.active > a {
 	color:#f58220;
 	background:#ffffff;
 }
 menu > ul > li.active > a:hover:before {
 	display:none;
-}
+}/*
 menu > ul > li a:hover:after {
 	content:'';
 	position:absolute;
@@ -475,7 +475,7 @@ menu > ul > li a:hover:after {
 }
 menu > ul > li.active a:hover:after {
 	display:none;
-}
+}*/
 @keyframes light {
     0% {
 		left:0;
@@ -1780,7 +1780,7 @@ h1 {
 	max-height:60px;
 	margin:auto;
 }
-.card-e .gallery .preview li.current:after {
+.card-e .gallery .preview li.current:after, .card-e .gallery .preview li:hover:after {
 	content:'';
 	position:absolute;
 	left:0;

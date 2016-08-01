@@ -227,7 +227,7 @@ $(function() {
 			});
 		}	
 	});
-	$('.index .rc ul').each(function() {
+	/*$('.index .rc ul').each(function() {
 		if ( $(this).attr('data-show') ) {
 			$(this).children('li').hide();
 			var d = eval($(this).attr('data-show'))-1;
@@ -244,5 +244,9 @@ $(function() {
 		$(this).parents('[data-tab]').find('ul li').css({
 			'display': 'inline-block'
 		});
+	});*/
+	$('.index .rc button.show-all').on('click', function(e) {
+		e.preventDefault();
+		$(this).parents('[data-tab]').find('ul').addClass('expand');
 	});
 });

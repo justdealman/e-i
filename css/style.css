@@ -818,6 +818,12 @@ button.standart:active {
 .index .rc ul li:nth-child(3n) {
 	margin-right:-10px;
 }
+.index .rc ul li:nth-child(1), .index .rc ul li:nth-child(2), .index .rc ul li:nth-child(3), .index .rc ul li:nth-child(4), .index .rc ul li:nth-child(5), .index .rc ul li:nth-child(6), .index .rc ul li:nth-child(7), .index .rc ul li:nth-child(8), .index .rc ul li:nth-child(9) {
+	display:inline-block;
+}
+.index .rc ul.expand li {
+	display:inline-block;
+}
 .index .rc button {
 	margin:14px 8px 18px 9px;
 }
@@ -3075,6 +3081,9 @@ h1 {
 	.photo-l li {
 		width:218px;
 	}
+	.index .rc ul li:nth-child(10), .index .rc ul li:nth-child(11), .index .rc ul li:nth-child(12) {
+		display:inline-block;
+	}
 }
 @media all and (min-width: 1460px) {
 	.panel > div {
@@ -3189,6 +3198,9 @@ h1 {
 	}
 	.photo-l li {
 		width:216px;
+	}
+	.index .rc ul li:nth-child(13), .index .rc ul li:nth-child(14), .index .rc ul li:nth-child(15) {
+		display:inline-block;
 	}
 }
 .fade {

@@ -120,8 +120,13 @@ $(function() {
 			slidesToScroll: 1,
 			adaptiveHeight: true,
 			infinite: true,
-			arrows: false,
+			arrows: true,
 			draggable: false
+		});
+		$('.gallery-e .main').on('afterChange', function(event, slick, currentSlide) {
+			var t = $(this).parents('.gallery-e').find('.preview');
+			t.slick('slickGoTo', currentSlide);
+			t.find('.item.slick-current').addClass('current').siblings().removeClass('current');
 		});
 		$('.gallery-e .preview .item').each(function() {
 			$(this).attr('data-item', $(this).index());
@@ -149,8 +154,9 @@ $(function() {
 		});
 		$('.gallery-e .preview .item > div').on('click', function(e) {
 			e.preventDefault();
+			var t = $(this).parents('.gallery-e').find('.main');
 			$(this).parent().addClass('current').siblings().removeClass('current');
-			$('.gallery-e .main').slick('slickGoTo', eval($(this).parent().attr('data-item')));
+			t.slick('slickGoTo', eval($(this).parent().attr('data-item')));
 		});
 		$('.gallery-e .preview .item.slick-current').addClass('current');
 	});
